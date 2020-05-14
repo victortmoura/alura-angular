@@ -1,5 +1,6 @@
 <h1>{{title}}</h1>
-<app-photo url='https://rollingstone.uol.com.br/media/_versions/rick-morty-temporada-4_widelg.jpg'
-alt='rickAndMorty'></app-photo>
-<app-photo url='https://uploads.metropoles.com/wp-content/uploads/2019/10/07112336/rick-and-morty-adult-swim-450x300.jpg'
-alt='rickAndMorty2'></app-photo>
+<app-photo 
+    *ngFor="let photo of photos" 
+    [url]='photo.url'
+    [description]='photo.description'>
+</app-photo>

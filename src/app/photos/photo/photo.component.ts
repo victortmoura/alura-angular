@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PhotoComponent {
 
-  @Input() description = '';
   @Input() url = '';
+  @Input() description = '';
 
 }
