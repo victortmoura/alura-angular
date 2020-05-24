@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { SigninComponent } from './signin/signin.component';
 import { VMessageModule } from '../shared/vmessage/vmessage.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
     declarations: [
@@ -12,7 +13,8 @@ import { VMessageModule } from '../shared/vmessage/vmessage.module';
     imports: [
         CommonModule,
         ReactiveFormsModule,
-        VMessageModule
+        VMessageModule,
+        RouterModule
     ]
 })
 export class HomeModule { }
